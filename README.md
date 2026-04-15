@@ -107,6 +107,24 @@ INS001,Loan,50000,Completed,14-04-2026
 
 ---
 
+## 🧪 Testing
+
+Unit tests are implemented using Python’s built-in `unittest` framework to ensure correctness and reliability of core functionalities.
+
+### Run Tests
+
+```bash
+python test_analyzer.py
+```
+
+### Test Coverage Includes:
+
+* Data aggregation functions
+* Search functionality (valid & invalid cases)
+* Data integrity checks for Pandas DataFrames
+
+---
+
 ## 👩‍💻 Author
 
 **Aliya Nazlin K M**
@@ -116,7 +134,6 @@ Software Engineer | Backend Developer transitioning to Python
 
 ## 🌟 Future Improvements
 
-* Add unit testing
 * Export results to CSV/Excel
 * Add data visualizations (charts)
 * Convert to web application (Flask/Django)
