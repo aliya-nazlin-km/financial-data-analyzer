@@ -1,0 +1,11 @@
+instruction_ref,instruction_type,amount,status,date
+INS001,Loan,50000,Completed,2024-01-10
+INS002,Securities,120000,Pending,2024-01-11
+INS003,Money,75000,Completed,2024-01-12
+INS004,Loan,30000,Failed,2024-01-13
+INS005,Securities,200000,Completed,2024-01-14
+INS006,Money,45000,Pending,2024-01-15
+INS007,Loan,90000,Completed,2024-01-16
+INS008,Loan,110000,Completed,2024-01-17
+INS009,Securities,95000,Failed,2024-01-18
+INS010,Money,60000,Completed,2024-01-19
