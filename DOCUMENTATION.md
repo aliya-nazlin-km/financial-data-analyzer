@@ -14,6 +14,7 @@
 * [Design Decisions](#design-decisions)
 * [Design Principles Used](#design-principles-used)
 * [SOLID Principles Applied](#solid-principles-applied)
+* [Testing Strategy](#testing-strategy)
 * [Future Enhancements](#future-enhancements)
 
 ---
@@ -216,9 +217,38 @@ Each module has a single responsibility:
 
 ---
 
+## Testing Strategy
+
+Unit testing is implemented using Python’s `unittest` framework to validate the correctness of individual components.
+
+### Approach
+
+* Each function in `FinancialAnalyzer` is tested independently
+* Both valid and invalid scenarios are covered
+* DataFrame outputs are validated for:
+
+  * Structure (columns)
+  * Content (non-empty results)
+* Type safety is ensured using explicit checks and casting where required
+
+### Test Cases Covered
+
+* `count_by_type()` → verifies non-empty result
+* `group_by_type()` → verifies aggregation columns and data presence
+* `search_by_reference()` → tested for valid and invalid inputs
+* `highest_transaction()` → verifies maximum value correctness
+* `lowest_transaction()` → verifies minimum value correctness
+
+### Key Considerations
+
+* Tests follow Arrange–Act–Assert pattern
+* Edge cases are included to ensure robustness
+* Pandas-specific behaviors (like DataFrame emptiness) are handled explicitly
+
+---
+
 ## Future Enhancements
 
-* Add unit testing
 * Add data visualization
 * Export results to CSV/Excel
 * Convert to web-based application
